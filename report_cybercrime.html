@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Report Cybercrime</title>
+    <link rel="stylesheet" href="report.css">
+    <script src="report.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Report Cybercrime</h1>
+    </header>
+    <main>
+        <div class="container">
+            <form id="reportForm" action="submit_report.php" method="post" enctype="multipart/form-data">
+                <div class="form-group">
+                    <label for="name">Your Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="caseProblem">Type of Cybercrime:</label>
+                    <input type="text" id="caseProblem" name="caseProblem" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="age">Your Age:</label>
+                    <input type="number" id="age" name="age" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="photos">Upload Photos (if any):</label>
+                    <input type="file" id="photos" name="photos[]" accept="image/*" multiple>
+                </div>
+
+                <div class="form-group">
+                    <label for="documents">Upload Documents (if any):</label>
+                    <input type="file" id="documents" name="documents[]" multiple>
+                </div>
+
+                <div class="form-group">
+                    <label for="details">Additional Details:</label><br>
+                    <textarea id="details" name="details" rows="4" cols="50" required></textarea>
+                </div>
+
+                <div class="form-group">
+                    <button type="submit" id="submitBtn">Submit Report</button>
+                </div>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <p> Securing Cyberspace &copy; 2024 . All rights reserved.</p>
+    </footer>
+    <script src="report.js"></script>
+</body>
+</html>

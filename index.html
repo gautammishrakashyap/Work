@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- page no 02 ( main page) -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Homepage</title>
+    <link rel="stylesheet" href="/styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playwrite+DE+Grund:wght@100..400&display=swap');
+        body {
+            padding: 0;
+            margin: 0;
+            font-family: 'Playwrite DE Grund', sans-serif;
+             
+
+        }
+
+        .page-one {
+            background-image: url('/wp5512569.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: center;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+            height: 100vh;
+            width: 100vw;
+            border-bottom: 10px solid grey;
+            /* Prevent horizontal scrolling */
+        }
+
+        .navbar {
+            background-color: #797979 !important;
+            box-shadow: 0 4px 8px rgba(255, 255, 255, 0.477);
+            background: rgba(255, 255, 255, 0.8);
+        }
+
+        .navbar-nav {
+            margin: 0 auto;
+            /* Center the navbar items */
+            display: flex;
+            justify-content: flex-end;
+            width: 100%;
+        }
+
+        .nav-item {
+            margin: 0 20px;
+            /* Adjust spacing between items */
+        }
+
+        .container {
+            background: #000000;
+            /* Black background */
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            /* Box shadow */
+            margin-top: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+
+        h1 {
+            color: #ffffff;
+            font-size: 35px;
+        }
+
+        h1 span {
+            color: #fff724;
+            font-size: 45px;
+        }
+
+        .page-section {
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            padding: 50px 0;
+            color: #fff;
+            text-align: center;
+        }
+
+        .section-1 {
+            background-image: url('/1140-scam-on-phone.jpg');
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+            padding-left: 60%;
+            border-bottom: 10px solid grey;
+        }
+
+        .section-2 {
+            background-image: url('/q.png');
+            height: 100vh;
+            width: 100vw;
+            border-bottom: 10px solid gray;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .section-2 h1 {
+            height: 70px;
+            border-radius: 10px;
+            background-color: #585858;
+            padding: 5px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .section-2 h1 a {
+            color: (255, 26, 26);
+        }
+
+        .section-2 h1 a:hover {
+            color: black;
+        }
+
+        .section-2 p {
+            color: rgb(0, 175, 0);
+        }
+
+        .section-2 .slide {
+            margin-top: 20%;
+        }
+
+        .section-3 {
+            background-image: url('/i_Cyber-Security-Bar-Graph_full.jpg');
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+            justify-content: flex-end;
+            align-items: flex-start;
+            border-bottom: 10px solid grey;
+        }
+
+        .section-3 .scrolling-text-container {
+            margin-top: 8%;
+            font-size: 20px;
+            overflow: hidden;
+            white-space: nowrap;
+            width: 100vw;
+            box-sizing: border-box;
+        }
+
+        .scrolling-text {
+            display: inline-block;
+            padding-left: 100%;
+            animation: scroll 15s linear infinite;
+            animation-play-state: running;
+            /* Default animation state */
+        }
+
+        .scrolling-text-container:hover .scrolling-text {
+            animation-play-state: paused;
+            /* Pause animation on hover */
+        }
+
+        @keyframes scroll {
+            from {
+                transform: translateX(100%);
+            }
+
+            to {
+                transform: translateX(-100%);
+            }
+        }
+
+        .page-section h2 {
+            font-size: 35px;
+        }
+
+        .page-section p {
+            font-size: 20px;
+            max-width: 600px;
+            margin: auto;
+        }
+
+        .problem-box {
+            background-color: red;
+            border: 3px solid rgb(0, 0, 0);
+            height: 50px;
+            width: 375px;
+            border-radius: 10px;
+            box-shadow: red 0px 0px 20px 0.5px;
+            
+        }
+
+        .problem-box .emergency {
+            padding-top: 70%;
+        }
+
+        .problem-box .emergency span h1 {
+            color: red;
+            font-weight: 700;
+            text-decoration: underline;
+            transition: color 0.3s, font-weight 0.3s;
+        }
+
+        .problem-box .emergency span h1:hover {
+            color: black;
+            font-weight: 900;
+        }
+
+        .section-2 .give-and-get {
+            display: flex;
+        }
+
+        .problem-box p {
+            color: black;
+            font-size: 20px;
+            border: 1px solid black;
+            border-radius: 5px;
+            padding: 5px;
+            margin-bottom: 10px;
+        }
+
+        .problem-box h2 a {
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s, font-weight 0.3s;
+            /* Smooth transition */
+        }
+
+        .problem-box h2 a:hover {
+            color: black;
+            font-weight: 900;
+        }
+
+        .team-section {
+            padding: 20px;
+            background-image: url(/bright-spot-light-effect-dark-background-design_1017-52209.avif);
+            text-align: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: center;
+            height: 100vh;
+
+        }
+
+        .team-section h1 {
+            font-size: 2.5em;
+            padding-bottom: 20px;
+            text-shadow: #000000 10px 10px 10px 10px;
+            width: 100vw;
+        }
+
+        .team-section p {
+            font-size: 1.2em;
+            margin-bottom: 40px;
+            background-color: gray;
+            border-radius: 20px;
+            box-shadow: #000000 0px 10px 100px 10px;
+            padding: 10px;
+        }
+
+        .members {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .member {
+            margin: 10px;
+            text-align: center;
+        }
+
+        .member img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .member p {
+            margin-top: 10px;
+            font-size: 1em;
+            padding: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="page-one">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <a style="margin-left: 20px;" class="navbar-brand" href="index.html">Home</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="hobby.html">Hobby</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="container">
+            <h1>Welcome to Cyber <span class="auto-type"></span></h1>
+        </div>
+    </div>
+
+    <!-- Who Are Us Section -->
+
+    <!-- First additional section -->
+    <div class="page-section section-1">
+        <div class="problem-box">
+            <H2> <a href="report_cybercrime.html">REPORT FRAUD</a> </H2>
+            <p>Have you come across any suspicious activities, received deceptive offers, or encountered threats? Your
+                vigilance is crucial in safeguarding our community. Report scams and fraud here !</p>
+            <div class="emergency">
+                <p>In case of emergency</p>
+                <span>
+                    <a href="contact.html">
+                        <h1>Contact Us !</h1>
+                    </a>
+                </span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Second additional section -->
+    <div class="page-section section-2">
+        <div class="give">
+            <h1><a href="#">Give Solution</a></h1>
+            <p>To solve problems like cyber crime, fraud, and scams, we need strong security and better awareness of
+                online dangers.</p>
+        </div>
+        <div class="get">
+            <h1><a href="#">Get solution</a></h1>
+            <p>Solutions for cyber crime and fraud include improving online security, checking systems regularly, and
+                teaching people how to stay safe on the internet.</p>
+        </div>
+    </div>
+
+    <!-- Third additional section -->
+    <div class="page-section section-3">
+        <div class="scrolling-text-container">
+            <div class="scrolling-text">
+                get data visualization part for this website and more info
+                <a href="#">Click here</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="team-section">
+
+
+        <h1>Developers..</h1>
+        <p>We are a team of Cyberspace researchers from the Indian Institute of Technology, Patna, and this is our
+            capstone project - Securing Cyberspace. We aim to help people from cyber fraud, scams, bullying, threats,
+            and everything related to the cyber world.</p>
+
+        <div class="members">
+            <div class="member">
+                <img src="/file_2024-06-23_05.17.39.png" alt="Member 1">
+                <p>Subham</p>
+            </div>
+            <div class="member">
+                <img src="/file_2024-06-23_05.20.33.png" alt="Member 2">
+                <p>Ajay</p>
+            </div>
+            <div class="member">
+                <img src="/WhatsApp Image 2024-06-23 at 11.29.56_4ec948f4.jpg" alt="Member 3">
+                <p>Gautam</p>
+            </div>
+            <div class="member">
+                <img src="/WhatsApp Image 2024-06-23 at 11.25.45_7a5be020.jpg" alt="Member 4">
+                <p>Yash</p>
+            </div>
+            <div class="member">
+                <img src="/ana.png" alt="Member 5">
+                <p>Anand</p>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+        var typed = new Typed(".auto-type", {
+            strings: ["WebSite", "Research", "Visualization"],
+            typeSpeed: 150,
+            backSpeed: 150,
+            loop: true
+        });
+    </script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+        crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

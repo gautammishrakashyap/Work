@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Give Solution</title>
+    <link rel="stylesheet" href="give.css">
+    <script src="give.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Give Solution</h1>
+    </header>
+    <main>
+        <div class="container">
+            <h2>Submit Your Solution</h2>
+            <p>Provide a solution to the problem below and receive a certificate of appreciation.</p>
+            <div class="problem">
+                <h3>Example Problem</h3>
+                <p>Describe the example problem here...</p>
+            </div>
+            <form id="solutionForm" action="submit_solution.php" method="post" enctype="multipart/form-data">
+                <div class="form-group">
+                    <label for="name">Your Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="solution">Your Solution:</label>
+                    <textarea id="solution" name="solution" rows="4" cols="50" required></textarea>
+                </div>
+                <div class="form-group">
+                    <button type="submit" id="submitSolutionBtn">Submit Solution</button>
+                </div>
+            </form>
+            <div id="certificateSection" style="display:none;">
+                <h3>Thank You for Your Solution!</h3>
+                <p>Download your certificate below:</p>
+                <a href="certificate.png" download="Certificate_of_Appreciation.png">
+                    <button>Download Certificate</button>
+                </a>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Your Website Name. All rights reserved.</p>
+    </footer>
+</body>
+</html>
